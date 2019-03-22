@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="899d9836-aaca-4b22-96aa-0fae12161ed9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/module/Usuarios/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Application/config/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/module/Usuarios/config/config.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/module/Application/config/module.config.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Application/config/module.config.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/Application/src/Controller/UsuarioController.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Application/src/Controller/UsuarioController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/Application/view/application/usuario/listar.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/module/Application/view/application/usuario/listar.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/Application/view/application/usuario/ver.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/module/Application/view/application/usuario/ver.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module/Blog/src/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Blog/src/Module.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Application/src/Controller/ControllerFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Usuarios/src/Controller/ControllerFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Application/src/Controller/UsuarioController.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Application/src/Model/Dao/UsuarioDao.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Usuarios/src/Model/Dao/UsuarioDao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Application/src/Model/Entity/Usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Usuarios/src/Model/Entity/Usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Application/src/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Application/src/Module.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Application/view/application/usuario/listar.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/module/Usuarios/view/usuarios/index/listar.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Application/view/application/usuario/ver.phtml" beforeDir="false" afterPath="$PROJECT_DIR$/module/Usuarios/view/usuarios/index/ver.phtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Usuarios/config/module.config.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Usuarios/config/module.config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Usuarios/src/Controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Usuarios/src/Controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/module/Usuarios/src/Module.php" beforeDir="false" afterPath="$PROJECT_DIR$/module/Usuarios/src/Module.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,11 +27,35 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/module/Blog/src/Module.php">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Application/src/Module.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+            <state relative-caret-position="27">
+              <caret line="21" selection-start-line="21" selection-end-line="27" selection-end-column="5" />
+              <folding>
+                <element signature="e#305#332#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/module/Usuarios/src/Module.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+              <folding>
+                <element signature="e#286#320#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Usuarios/config/config.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -34,71 +63,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/Usuarios/src/Controller/IndexController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
+            <state relative-caret-position="105">
+              <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/CursoController.php">
+        <entry file="file://$PROJECT_DIR$/module/Usuarios/src/Controller/ControllerFactory.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="-63">
+              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/module/Usuarios/src/Model/Dao/UsuarioDao.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
               <folding>
-                <element signature="e#122#171#0#PHP" expanded="true" />
+                <element signature="e#119#146#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/UsuarioController.php">
+        <entry file="file://$PROJECT_DIR$/module/Usuarios/config/module.config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
+            <state relative-caret-position="189">
+              <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
               <folding>
-                <element signature="e#123#160#0#PHP" expanded="true" />
+                <element signature="e#27#62#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/src/Model/Dao/UsuarioDao.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="355">
-              <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-              <folding>
-                <element signature="e#122#159#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="41" column="27" selection-start-line="41" selection-start-column="27" selection-end-line="41" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/src/Module.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="273">
-              <caret line="80" column="33" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
-              <folding>
-                <element signature="e#304#341#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/view/application/usuario/listar.phtml">
+        <entry file="file://$PROJECT_DIR$/module/Usuarios/view/usuarios/index/listar.phtml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="168">
               <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
@@ -107,19 +112,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/module/Application/view/application/usuario/ver.phtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="84">
-              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/module/Application/config/module.config.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
-              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            <state relative-caret-position="105">
+              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding>
                 <element signature="e#304#333#0#PHP" expanded="true" />
               </folding>
@@ -144,24 +140,27 @@
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/module/Application/config/config.ini" />
         <option value="$PROJECT_DIR$/module/Application/src/Controller/ControllerFactory.php" />
-        <option value="$PROJECT_DIR$/module/Application/src/Module.php" />
         <option value="$PROJECT_DIR$/module/Usuarios/src/Controller/UsuarioController.php" />
-        <option value="$PROJECT_DIR$/module/Usuarios/config/module.config.php" />
-        <option value="$PROJECT_DIR$/module/Usuarios/src/Controller/IndexController.php" />
         <option value="$PROJECT_DIR$/module/Usuarios/view/usuarios/index/index.phtml" />
-        <option value="$PROJECT_DIR$/module/Usuarios/src/Module.php" />
         <option value="$PROJECT_DIR$/module/Blog/src/Controller/BlogController.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/module/Blog/view/blog/blog/index.phtml" />
         <option value="$PROJECT_DIR$/config/modules.config.php" />
         <option value="$PROJECT_DIR$/module/Blog/config/module.config.php" />
-        <option value="$PROJECT_DIR$/module/Application/config/module.config.php" />
         <option value="$PROJECT_DIR$/module/Application/view/application/usuario/ver.phtml" />
         <option value="$PROJECT_DIR$/module/Application/view/application/usuario/listar.phtml" />
-        <option value="$PROJECT_DIR$/module/Application/src/Controller/UsuarioController.php" />
         <option value="$PROJECT_DIR$/module/Application/src/Model/Dao/UsuarioDao.php" />
         <option value="$PROJECT_DIR$/module/Application/view/layout/layout.phtml" />
         <option value="$PROJECT_DIR$/module/Blog/src/Module.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Controller/UsuarioController.php" />
+        <option value="$PROJECT_DIR$/module/Usuarios/src/Controller/ControllerFactory.php" />
+        <option value="$PROJECT_DIR$/module/Usuarios/src/Model/Dao/UsuarioDao.php" />
+        <option value="$PROJECT_DIR$/module/Usuarios/src/Model/Entity/Usuario.php" />
+        <option value="$PROJECT_DIR$/module/Usuarios/src/Controller/IndexController.php" />
+        <option value="$PROJECT_DIR$/module/Application/config/module.config.php" />
+        <option value="$PROJECT_DIR$/module/Usuarios/config/module.config.php" />
+        <option value="$PROJECT_DIR$/module/Application/src/Module.php" />
+        <option value="$PROJECT_DIR$/module/Usuarios/src/Module.php" />
       </list>
     </option>
   </component>
@@ -210,10 +209,10 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1826" />
-    <option name="y" value="27" />
-    <option name="width" value="1221" />
-    <option name="height" value="637" />
+    <option name="x" value="1920" />
+    <option name="y" value="-2" />
+    <option name="width" value="1366" />
+    <option name="height" value="770" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -228,11 +227,6 @@
             <path>
               <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
@@ -283,6 +277,49 @@
               <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
               <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="application" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Usuarios" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Usuarios" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Usuarios" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Usuarios" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
+              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
+              <item name="module" type="462c0819:PsiDirectoryNode" />
+              <item name="Usuarios" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -290,7 +327,7 @@
               <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
+              <item name="Usuarios" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Model" type="462c0819:PsiDirectoryNode" />
               <item name="Dao" type="462c0819:PsiDirectoryNode" />
@@ -299,113 +336,10 @@
               <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
               <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
               <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="application" type="462c0819:PsiDirectoryNode" />
-              <item name="usuario" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Application" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Usuarios" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Usuarios" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
               <item name="Usuarios" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
-              <item name="project-authentication" type="462c0819:PsiDirectoryNode" />
-              <item name="module" type="462c0819:PsiDirectoryNode" />
-              <item name="Usuarios" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Controller" type="462c0819:PsiDirectoryNode" />
+              <item name="Model" type="462c0819:PsiDirectoryNode" />
+              <item name="Entity" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="project-authentication" type="b2602c69:ProjectViewProjectNode" />
@@ -439,12 +373,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/module/Usuarios/view/usuarios/index" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/module/Usuarios/view/usuarios/index" />
+      <recent name="$PROJECT_DIR$/module/Usuarios/config" />
+      <recent name="$PROJECT_DIR$/module/Usuarios/src" />
+      <recent name="$PROJECT_DIR$/module/Usuarios/src/Controller" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/module/Application/view/layout" />
       <recent name="$PROJECT_DIR$/module/Application/view/application/curso" />
@@ -473,12 +413,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1553268790502</updated>
-      <workItem from="1553268792195" duration="18279000" />
+      <workItem from="1553268792195" duration="22090000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18279000" />
+    <option name="totallyTimeSpent" value="22090000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="25" width="1366" height="743" extended-state="6" />
@@ -490,7 +430,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.21086262" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.28666666" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -508,21 +448,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/module/Application/src/Controller/UsuarioController.php</url>
-          <line>44</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/view/application/catalogo/listar.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -549,13 +475,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Model/Entity/Usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="42" selection-start-line="15" selection-start-column="42" selection-end-line="15" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -578,37 +497,10 @@
     <entry file="file://$PROJECT_DIR$/config/application.config.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Usuarios/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="33" column="14" selection-start-line="33" selection-start-column="14" selection-end-line="33" selection-end-column="14" />
-          <folding>
-            <element signature="e#27#56#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/view/layout/layout_otro.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="227">
           <caret line="44" column="16" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/config/config.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/ControllerFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#123#160#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -653,20 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Usuarios/src/Module.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="17" selection-start-line="17" selection-end-line="33" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Usuarios/src/Controller/IndexController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="15" column="58" selection-start-line="15" selection-start-column="58" selection-end-line="15" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/CursoController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -677,47 +555,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/config/module.config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-          <folding>
-            <element signature="e#304#333#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/application/usuario/listar.phtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/view/application/usuario/ver.phtml">
+    <entry file="file://$PROJECT_DIR$/module/Usuarios/view/usuarios/index/ver.phtml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/UsuarioController.php">
+    <entry file="file://$PROJECT_DIR$/module/Blog/src/Module.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="46" column="32" selection-start-line="46" selection-start-column="32" selection-end-line="46" selection-end-column="32" />
-          <folding>
-            <element signature="e#123#160#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Model/Dao/UsuarioDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="49" lean-forward="true" selection-start-line="49" selection-end-line="49" />
-          <folding>
-            <element signature="e#122#159#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="136">
+          <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -728,20 +576,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Application/src/Module.php">
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Usuarios/src/Model/Entity/Usuario.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="80" column="33" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+        <state relative-caret-position="63">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Usuarios/src/Model/Dao/UsuarioDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding>
-            <element signature="e#304#341#0#PHP" expanded="true" />
+            <element signature="e#119#146#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module/Blog/src/Module.php">
+    <entry file="file://$PROJECT_DIR$/module/Usuarios/src/Controller/ControllerFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="40" column="3" selection-start-line="40" selection-start-column="3" selection-end-line="40" selection-end-column="3" />
+        <state relative-caret-position="-63">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Usuarios/config/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="74" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Usuarios/src/Controller/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="12" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+          <folding>
+            <element signature="e#304#333#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Usuarios/config/module.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="24" column="45" lean-forward="true" selection-start-line="24" selection-start-column="45" selection-end-line="24" selection-end-column="45" />
+          <folding>
+            <element signature="e#27#62#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Controller/UsuarioController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#123#160#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Usuarios/view/usuarios/index/listar.phtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Application/src/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="21" selection-start-line="21" selection-end-line="27" selection-end-column="5" />
+          <folding>
+            <element signature="e#305#332#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module/Usuarios/src/Module.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="e#286#320#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

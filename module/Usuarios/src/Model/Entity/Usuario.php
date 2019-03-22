@@ -6,7 +6,7 @@
  * Time: 10:13
  */
 
-namespace Application\Model\Entity;
+namespace Usuarios\Model\Entity;
 
 
 class Usuario

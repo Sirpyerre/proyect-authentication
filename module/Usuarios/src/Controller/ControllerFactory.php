@@ -6,10 +6,10 @@
  * Time: 12:06
  */
 
-namespace Application\Controller;
+namespace Usuarios\Controller;
 
 
-use Application\Model\Dao\UsuarioDao;
+use Usuarios\Model\Dao\UsuarioDao;
 use Interop\Container\ContainerInterface;
 use Zend\ServiceManager\Factory\FactoryInterface;
 
@@ -19,10 +19,10 @@ class ControllerFactory implements FactoryInterface
     {
         $controller = null;
         switch ($requestedName){
-            case UsuarioController::class :
+            case IndexController::class :
                 $usuarioDao = $container->get(UsuarioDao::class);
                 $configIni = $container->get('ConfigIni');
-                $controller = new UsuarioController($usuarioDao, $configIni);
+                $controller = new IndexController($usuarioDao, $configIni);
                 break;
 
             default:

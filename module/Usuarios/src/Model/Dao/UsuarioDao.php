@@ -6,10 +6,10 @@
  * Time: 11:00
  */
 
-namespace Application\Model\Dao;
+namespace Usuarios\Model\Dao;
 
 
-use Application\Model\Entity\Usuario;
+use Usuarios\Model\Entity\Usuario;
 use ArrayObject;
 
 class UsuarioDao

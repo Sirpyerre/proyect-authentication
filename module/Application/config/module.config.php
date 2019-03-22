@@ -14,20 +14,6 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 return [
     'router' => [
         'routes' => [
-            'usuario' => [
-                'type' => Segment::class,
-                'options' => [
-                    'route' => '/usuario[/:action][/:id]',
-                    'constraints' => [
-                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                        'id' => '[0-9]+'
-                    ],
-                    'defaults' => [
-                        'controller' => Controller\UsuarioController::class,
-                        'action' => 'listar',
-                    ],
-                ],
-            ],
             'catalogo' => [
                 'type' => Segment::class,
                 'options' => [
@@ -75,7 +61,7 @@ return [
             Controller\IndexController::class => InvokableFactory::class,
             Controller\CatalogoController::class => InvokableFactory::class,
             Controller\CursoController::class => InvokableFactory::class,
-            Controller\UsuarioController::class => Controller\ControllerFactory::class,
+//            Controller\UsuarioController::class => Controller\ControllerFactory::class,
         ],
     ],
     'view_manager' => [

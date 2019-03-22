@@ -1,35 +1,29 @@
 <?php
 namespace Usuarios;
 
+use Usuarios\Controller\ControllerFactory;
 use Zend\Router\Http\Segment;
-use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
     'controllers' => [
         'factories' => [
-            Controller\IndexController::class => InvokableFactory::class,
+            Controller\IndexController::class => ControllerFactory::class,
         ],
     ],
     'router' => [
         'routes' => [
-            'usuarios.index' => [
-                'type'    => Segment::class,
+            'usuario' => [
+                'type' => Segment::class,
                 'options' => [
-                    // Change this to something specific to your module
-                    'route'    => '/usuarios[/:action][/:id]',
+                    'route' => '/usuario[/:action][/:id]',
                     'constraints' => [
                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
-                        'id' => '[0-9]+',
+                        'id' => '[0-9]+'
                     ],
                     'defaults' => [
-                        'controller'    => Controller\IndexController::class,
-                        'action'        => 'index',
+                        'controller' => Controller\IndexController::class,
+                        'action' => 'listar',
                     ],
-                ],
-                'may_terminate' => true,
-                'child_routes' => [
-                    // You can place additional routes that match under the
-                    // route defined above here.
                 ],
             ],
         ],

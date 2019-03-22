@@ -7,6 +7,8 @@
 
 namespace Usuarios;
 
+use Usuarios\Model\Dao\UsuarioDao;
+use Zend\Config\Reader\Ini;
 use Zend\Mvc\MvcEvent;
 
 class Module
@@ -28,8 +30,39 @@ class Module
 //        $viewModel->setTemplate('layout/layout_otro');
 //    }
 //
-//    public function initConfig()
-//    {
-//
-//    }
+    public function onBootstrap($e)
+    {
+        $eventManager = $e->getApplication()->getEventManager();
+//        $eventManager->attach(MvcEvent::EVENT_ROUTE, [$this, 'initConfig']);
+        $eventManager->attach(MvcEvent::EVENT_DISPATCH, [$this, 'initViewRender']);
+//        $eventManager->attach(MvcEvent::EVENT_DISPATCH, [$this, 'initEnviroment']);
+    }
+
+    public function initViewRender(MvcEvent $e)
+    {
+        $application = $e->getApplication();
+        $sm = $application->getServiceManager();
+        $viewRender = $sm->get('ViewRenderer');
+        $config = $sm->get('ConfigIni');
+
+        $viewRender->headTitle($config['parametros']['titulo']);
+        $viewRender->headMeta()->setCharset($config['parametros']['view']['charset']);
+        $viewRender->doctype($config['parametros']['view']['doctype']);
+    }
+
+    public function getServiceConfig()
+    {
+        return [
+            'factories' => [
+                UsuarioDao::class => function ($sm) {
+                    return new UsuarioDao();
+                },
+                'ConfigIni' => function ($sm) {
+                    $reader = new Ini();
+                    $data = $reader->fromFile(__DIR__ . '/../config/config.ini');
+                    return $data;
+                }
+            ]
+        ];
+    }
 }
