@@ -14,17 +14,17 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 return [
     'router' => [
         'routes' => [
-            'index' => [
+            'usuario' => [
                 'type' => Segment::class,
                 'options' => [
-                    'route' => '/index[/:action][/:id]',
+                    'route' => '/usuario[/:action][/:id]',
                     'constraints' => [
                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
                         'id' => '[0-9]+'
                     ],
                     'defaults' => [
                         'controller' => Controller\UsuarioController::class,
-                        'action' => 'index',
+                        'action' => 'listar',
                     ],
                 ],
             ],

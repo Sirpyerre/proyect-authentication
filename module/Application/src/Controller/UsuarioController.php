@@ -26,14 +26,14 @@ class UsuarioController extends AbstractActionController
 
     public function indexAction()
     {
-        return $this->redirect()->toRoute('index', ['action' => 'listar']);
+        return $this->redirect()->toRoute('usuario', ['action' => 'listar']);
     }
 
     public function listarAction()
     {
         $layout = $this->layout();
         $layout->algunaVariable = 'Hola, alguna variable para el layout';
-        $layout->setTemplate('layout/layout_otro');
+//        $layout->setTemplate('layout/layout_otro');
         return new ViewModel([
             'listaUsuario' => $this->listaUsuario->obtenerTodos(),
             'titulo' => $this->config['parametros']['mvc']['index']['titulo']
@@ -46,7 +46,7 @@ class UsuarioController extends AbstractActionController
 
         $resultado = $this->listaUsuario->obtenerPorId($id);
 
-        $view = new ViewModel(['index' => $resultado,
+        $view = new ViewModel(['usuario' => $resultado,
             'titulo' => "Detalle index"]);
         $view->setTerminal(true);
         return $view;
