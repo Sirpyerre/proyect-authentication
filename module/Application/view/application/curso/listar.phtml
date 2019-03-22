@@ -1,0 +1,13 @@
+<h1><?= $this->Titulo ?></h1>
+<hr>
+<p>
+    fecha: <b><?= $this->Fecha->format('Y-m-d H:i:s') ?></b>
+</p>
+
+<table class="table">
+    <?php foreach ($this->cursos as $producto): ?>
+        <tr>
+            <td><?= $producto ?></td>
+        </tr>
+    <?php endforeach; ?>
+</table>
