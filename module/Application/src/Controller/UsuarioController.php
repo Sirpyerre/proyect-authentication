@@ -16,16 +16,17 @@ use Zend\View\Model\ViewModel;
 class UsuarioController extends AbstractActionController
 {
     private $listaUsuario;
+    private $config;
 
-    public function __construct()
+    public function __construct(UsuarioDao $usuarioDao, array $config)
     {
-        $this->listaUsuario = new UsuarioDao();
+        $this->listaUsuario = $usuarioDao;
+        $this->config = $config;
     }
-
 
     public function indexAction()
     {
-        return $this->redirect()->toRoute('usuario', ['action' => 'listar']);
+        return $this->redirect()->toRoute('index', ['action' => 'listar']);
     }
 
     public function listarAction()
@@ -35,7 +36,7 @@ class UsuarioController extends AbstractActionController
         $layout->setTemplate('layout/layout_otro');
         return new ViewModel([
             'listaUsuario' => $this->listaUsuario->obtenerTodos(),
-            'titulo' => 'Lista de usuarios'
+            'titulo' => $this->config['parametros']['mvc']['index']['titulo']
         ]);
     }
 
@@ -45,8 +46,8 @@ class UsuarioController extends AbstractActionController
 
         $resultado = $this->listaUsuario->obtenerPorId($id);
 
-        $view = new ViewModel(['usuario' => $resultado,
-            'titulo' => "Detalle usuario"]);
+        $view = new ViewModel(['index' => $resultado,
+            'titulo' => "Detalle index"]);
         $view->setTerminal(true);
         return $view;
     }

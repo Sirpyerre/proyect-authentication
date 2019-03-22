@@ -15,7 +15,7 @@
             <td><?=$usuario->getNombre()?></td>
             <td><?=$usuario->getApellido()?></td>
             <td>
-                <a href="<?= $this->url('usuario', ['action' => 'ver', 'id' => $usuario->getId()]) ?>">Ver</a>
+                <a href="<?= $this->url('index', ['action' => 'ver', 'id' => $usuario->getId()]) ?>">Ver</a>
             </td>
         </tr>
 

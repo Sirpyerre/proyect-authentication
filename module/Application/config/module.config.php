@@ -14,10 +14,10 @@ use Zend\ServiceManager\Factory\InvokableFactory;
 return [
     'router' => [
         'routes' => [
-            'usuario' => [
+            'index' => [
                 'type' => Segment::class,
                 'options' => [
-                    'route' => '/usuario[/:action][/:id]',
+                    'route' => '/index[/:action][/:id]',
                     'constraints' => [
                         'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
                         'id' => '[0-9]+'
@@ -75,7 +75,7 @@ return [
             Controller\IndexController::class => InvokableFactory::class,
             Controller\CatalogoController::class => InvokableFactory::class,
             Controller\CursoController::class => InvokableFactory::class,
-            Controller\UsuarioController::class => InvokableFactory::class,
+            Controller\UsuarioController::class => Controller\ControllerFactory::class,
         ],
     ],
     'view_manager' => [
