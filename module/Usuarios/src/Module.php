@@ -7,10 +7,29 @@
 
 namespace Usuarios;
 
+use Zend\Mvc\MvcEvent;
+
 class Module
 {
     public function getConfig()
     {
         return include __DIR__ . '/../config/module.config.php';
     }
+//
+//    public function init($mm)
+//    {
+//        $eventManager = $mm->getEventManager();
+//        $sharedEvents = $eventManager->getSharedManager();
+//        $sharedEvents->attach('Zend\Mvc\Application', MvcEvent::EVENT_BOOTSTRAP, [$this, 'initConfig']);
+//    }
+//
+//    public function setLayout($e){
+//        $viewModel = $e->getViewModel();
+//        $viewModel->setTemplate('layout/layout_otro');
+//    }
+//
+//    public function initConfig()
+//    {
+//
+//    }
 }
