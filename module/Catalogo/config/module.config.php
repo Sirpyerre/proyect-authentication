@@ -1,23 +1,28 @@
 <?php
-namespace Usuarios;
+namespace Catalogo;
 
+use Zend\Router\Http\Segment;
 use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
     'controllers' => [
         'factories' => [
-            Controller\SkeletonController::class => InvokableFactory::class,
+            Controller\CatalogoController::class => InvokableFactory::class,
         ],
     ],
     'router' => [
         'routes' => [
-            'module-name-here' => [
-                'type'    => 'Literal',
+            'catalogo' => [
+                'type'    => Segment::class,
                 'options' => [
                     // Change this to something specific to your module
-                    'route'    => '/module-specific-root',
+                    'route'    => '/catalogo[/:action][/:id]',
+                    'constraints' => [
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                        'id' => '[0-9]+'
+                    ],
                     'defaults' => [
-                        'controller'    => Controller\SkeletonController::class,
+                        'controller'    => Controller\CatalogoController::class,
                         'action'        => 'index',
                     ],
                 ],
@@ -31,7 +36,7 @@ return [
     ],
     'view_manager' => [
         'template_path_stack' => [
-            'Usuarios' => __DIR__ . '/../view',
+            'Catalogo' => __DIR__ . '/../view',
         ],
     ],
 ];

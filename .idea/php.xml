@@ -36,6 +36,7 @@
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-form" />
       <path value="$PROJECT_DIR$/vendor/container-interop/container-interop" />
       <path value="$PROJECT_DIR$/vendor/zendframework/zend-loader" />
+      <path value="$PROJECT_DIR$/vendor/zendframework/zend-json" />
     </include_path>
   </component>
 </project>

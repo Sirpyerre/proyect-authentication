@@ -27,7 +27,8 @@
         "psr-4": {
             "Application\\": "module/Application/src/",
             "Blog\\": "module/Blog/src/",
-            "Usuarios\\": "module/Usuarios/src/"
+            "Usuarios\\": "module/Usuarios/src/",
+            "Catalogo\\": "module/Catalogo/src/"
         }
     },
     "autoload-dev": {

@@ -5,11 +5,11 @@
  * @license   http://framework.zend.com/license/new-bsd New BSD License
  */
 
-namespace Usuarios\Controller;
+namespace Catalogo\Controller;
 
 use Zend\Mvc\Controller\AbstractActionController;
 
-class SkeletonController extends AbstractActionController
+class CatalogoController extends AbstractActionController
 {
     public function indexAction()
     {
