@@ -8,6 +8,7 @@ return [
     'controllers' => [
         'factories' => [
             Controller\IndexController::class => ControllerFactory::class,
+            Controller\LoginController::class => ControllerFactory::class,
         ],
     ],
     'router' => [
@@ -23,6 +24,19 @@ return [
                     'defaults' => [
                         'controller' => Controller\IndexController::class,
                         'action' => 'listar',
+                    ],
+                ],
+            ],
+            'login' => [
+                'type' => Segment::class,
+                'options' => [
+                    'route' => '/login[/:action]',
+                    'constraints' => [
+                        'action' => '[a-zA-Z][a-zA-Z0-9_-]*',
+                    ],
+                    'defaults' => [
+                        'controller' => Controller\LoginController::class,
+                        'action' => 'login',
                     ],
                 ],
             ],

@@ -8,11 +8,10 @@
 
 namespace Usuarios\Controller;
 
-
-
 use Interop\Container\ContainerInterface;
 use Usuarios\Model\Dao\IUsuario;
 use Zend\ServiceManager\Factory\FactoryInterface;
+use Usuarios\Model\Login;
 
 class ControllerFactory implements FactoryInterface
 {
@@ -24,6 +23,11 @@ class ControllerFactory implements FactoryInterface
                 $usuarioDao = $container->get(IUsuario::class);
                 $configIni = $container->get('ConfigIni');
                 $controller = new IndexController($usuarioDao, $configIni);
+                break;
+
+            case LoginController::class :
+                $login = $container->get(Login::class);
+                $controller = new LoginController($login);
                 break;
 
             default:
