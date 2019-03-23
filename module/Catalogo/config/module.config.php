@@ -2,12 +2,12 @@
 namespace Catalogo;
 
 use Zend\Router\Http\Segment;
-use Zend\ServiceManager\Factory\InvokableFactory;
+//use Zend\ServiceManager\Factory\InvokableFactory;
 
 return [
     'controllers' => [
         'factories' => [
-            Controller\CatalogoController::class => InvokableFactory::class,
+            Controller\IndexController::class => ControllerFactory::class,
         ],
     ],
     'router' => [
@@ -22,7 +22,7 @@ return [
                         'id' => '[0-9]+'
                     ],
                     'defaults' => [
-                        'controller'    => Controller\CatalogoController::class,
+                        'controller'    => Controller\IndexController::class,
                         'action'        => 'index',
                     ],
                 ],

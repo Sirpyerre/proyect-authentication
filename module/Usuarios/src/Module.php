@@ -7,8 +7,13 @@
 
 namespace Usuarios;
 
+use Usuarios\Model\Dao\IUsuario;
 use Usuarios\Model\Dao\UsuarioDao;
+use Usuarios\Model\Entity\Usuario;
 use Zend\Config\Reader\Ini;
+use Zend\Db\Adapter\AdapterInterface;
+use Zend\Db\ResultSet\ResultSet;
+use Zend\Db\TableGateway\TableGateway;
 use Zend\Mvc\MvcEvent;
 
 class Module
@@ -54,8 +59,16 @@ class Module
     {
         return [
             'factories' => [
-                UsuarioDao::class => function ($sm) {
-                    return new UsuarioDao();
+                'UsuariosTableGateway' => function($sm){
+                    $dbAdapter = $sm->get(AdapterInterface::class);
+                    $resultSetPrototype = new ResultSet();
+                    $resultSetPrototype->setArrayObjectPrototype(new Usuario());
+                    return new TableGateway('usuarios',$dbAdapter, null,$resultSetPrototype);
+                },
+                IUsuario::class => function ($sm) {
+                    $tableGateway = $sm->get('UsuariosTableGateway');
+                    $dao = new UsuarioDao($tableGateway);
+                    return $dao;
                 },
                 'ConfigIni' => function ($sm) {
                     $reader = new Ini();

@@ -1,21 +1,36 @@
 <div class="page-header">
     <h1><?= $this->titulo ?></h1>
 </div>
-
+<p>
+    <a href="<?= $this->url('usuario', ['action' => 'crear']) ?>" class="btn btn-default btn-xs">
+        crear (+)
+    </a>
+</p>
 <table class="table table-striped table-hover" style="width:700px;">
     <tr>
         <th>Id</th>
         <th>Nombre</th>
         <th>Apellido</th>
-        <th>Detalle</th>
+        <th>Opciones</th>
     </tr>
     <?php foreach ($this->listaUsuario as $usuario): ?>
         <tr>
-            <td><?=$usuario->getId()?></td>
-            <td><?=$usuario->getNombre()?></td>
-            <td><?=$usuario->getApellido()?></td>
+            <td><?= $usuario->getId() ?></td>
+            <td><?= $usuario->getNombre() ?></td>
+            <td><?= $usuario->getApellido() ?></td>
             <td>
-                <a href="<?= $this->url('usuario', ['action' => 'ver', 'id' => $usuario->getId()]) ?>">Ver</a>
+                <a class="btn btn-default btn-xs"
+                   href="<?= $this->url('usuario', ['action' => 'ver', 'id' => $usuario->getId()]) ?>">
+                    Ver</a>
+
+                <a class="btn btn-warning btn-xs"
+                   href="<?= $this->url('usuario', ['action' => 'editar', 'id' => $usuario->getId()]) ?>">
+                    Editar</a>
+
+                <a class="btn btn-danger btn-xs"
+                   href="<?= $this->url('usuario', ['action' => 'eliminar', 'id' => $usuario->getId()]) ?>"
+                   onclick="return confirm('¿Esta seguro que desea eliminar a <?= $usuario->getNombre() ?>');"
+                >Eliminar</a>
             </td>
         </tr>
 

@@ -15,7 +15,7 @@ return [
     'db' => [
         'driver' => 'Pdo_Mysql',
         'database' => 'proyecto_zf3',
-        'hostname' => 'localhost',
+        'hostname' => 'mysql',
 //        'driver_options' =>
     ]
 ];

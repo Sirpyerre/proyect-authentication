@@ -2,22 +2,19 @@
 /**
  * Created by PhpStorm.
  * User: peter
- * Date: 22/03/19
- * Time: 17:19
+ * Date: 23/03/19
+ * Time: 12:36
  */
 
-namespace Catalogo\Form;
+namespace Usuarios\Form;
 
 
 use Zend\Form\Form;
 use Zend\Form\Element;
 
-class Producto extends Form
+class UsuariosForm extends Form
 {
 
-    /**
-     * Producto constructor.
-     */
     public function __construct()
     {
         parent::__construct($name);
@@ -25,45 +22,49 @@ class Producto extends Form
             'name' => 'id',
             'type' => Element\Hidden::class,
         ]);
+
         $this->add([
             'type' => Element\Text::class,
-            'name' => 'descripcion',
+            'name' => 'nombre',
             'attributes' => [
                 'class' => 'form-control',
             ],
             'options' => [
-                'label' => 'Descripcion',
+                'label' => 'nombre',
                 'label_attributes' => [
                     'class' => 'col-sm-2 control-label',
                 ],
             ],
         ]);
+
         $this->add([
             'type' => Element\Text::class,
-            'name' => 'precio',
+            'name' => 'apellido',
             'attributes' => [
                 'class' => 'form-control',
             ],
             'options' => [
-                'label' => 'Precio',
+                'label' => 'apellido',
                 'label_attributes' => [
                     'class' => 'col-sm-2 control-label',
                 ],
             ],
         ]);
+
         $this->add([
             'type' => Element\Text::class,
-            'name' => 'cantidad',
+            'name' => 'email',
             'attributes' => [
                 'class' => 'form-control',
             ],
             'options' => [
-                'label' => 'Cantidad',
+                'label' => 'E-mail',
                 'label_attributes' => [
                     'class' => 'col-sm-2 control-label',
                 ],
             ],
         ]);
+
         $this->add([
             'name' => 'send',
             'type' => Element\Submit::class,

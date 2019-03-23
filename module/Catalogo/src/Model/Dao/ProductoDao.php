@@ -33,7 +33,7 @@ class ProductoDao implements IProductoDao
         $id = (int)$id;
         $rowset = $this->tableGateway->select(['id' => $id]);
         $row = $rowset->current();
-        if ($row) {
+        if (!$row) {
             throw new \RuntimeException("No se pudo encontrar el producto: $id");
         }
 
